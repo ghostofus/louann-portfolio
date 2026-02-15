@@ -8,7 +8,7 @@ import { ArrowRight, Mail, Github, Linkedin, ExternalLink, Download } from "luci
 
 // ——— Données (à personnaliser) ———
 const PROJECTS = [
-    { title: "Project One", role: "Product / Game Producer", summary: "Court résumé du projet...", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#" },
+    { title: "Projet 1", role: "Product / Game Producer", summary: "Court résumé du projet...", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#" },
     { title: "Project Two", role: "Project Manager", summary: "Contexte, taille d'équipe, résultats...", tags: ["Scrum", "Stakeholders", "KPIs"], link: "#" },
     { title: "Project Three", role: "Producer / Coordinator", summary: "Rôle, responsabilités, notable...", tags: ["Planning", "Delivery", "QA"], link: "#" },
 ];
