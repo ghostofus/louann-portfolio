@@ -50,7 +50,7 @@ const stagger = { animate: { transition: { staggerChildren: 0.12 } } };
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-indigo-400/30">
+        <div className="min-h-screen bg-[#0D1F3E] text-[#EDF0FC] selection:bg-[#4782E4]/30">
             <Header />
             <main>
                 <Hero />
@@ -66,19 +66,20 @@ export default function Page() {
 
 function Header() {
     return (
-        <div className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-zinc-950/60 border-b border-white/5">
+        <div className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-[#0D1F3E]/60 border-b border-[#C3D0F6]/10">
             <div className="mx-auto max-w-6xl px-4">
                 <div className="flex items-center justify-between py-4">
-                    <a href="#home" className="font-semibold tracking-tight text-zinc-100">Lou-Ann Barry</a>
-                    <nav className="hidden md:flex items-center gap-6 text-zinc-300">
-                        <a href="#projects" className="hover:text-white transition">Projets</a>
-                        <a href="#about" className="hover:text-white transition">À propos</a>
-                        <a href="#experience" className="hover:text-white transition">Expérience</a>
-                        <a href="#contact" className="hover:text-white transition">Contact</a>
+                    <a href="#home" className="font-semibold tracking-tight text-[#EDF0FC]">Lou-Ann Barry</a>
+                    <nav className="hidden md:flex items-center gap-6 text-[#C3D0F6]">
+                        <a href="#projects" className="hover:text-[#EDF0FC] transition">Projets</a>
+                        <a href="#about" className="hover:text-[#EDF0FC] transition">À propos</a>
+                        <a href="#experience" className="hover:text-[#EDF0FC] transition">Expérience</a>
+                        <a href="#contact" className="hover:text-[#EDF0FC] transition">Contact</a>
+
                         <a
                             href={LINKS.resumeUrl}
                             download
-                            className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition"
+                            className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-3 py-1.5 text-sm hover:bg-[#1F3E71]/35 transition"
                         >
                             <Download className="h-4 w-4" /> CV
                         </a>
@@ -92,31 +93,35 @@ function Header() {
 function Hero() {
     return (
         <section id="home" className="relative overflow-hidden">
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(60%_40%_at_50%_-10%,rgba(99,102,241,0.25),transparent_60%)]" />
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(60%_40%_at_50%_-10%,rgba(71,130,228,0.25),transparent_60%)]" />
             <div className="mx-auto max-w-6xl px-4 py-24 md:py-32">
                 <motion.div variants={stagger} initial="initial" whileInView="animate" viewport={{ once: true, amount: 0.5 }} className="grid gap-10 md:grid-cols-2 md:items-center">
                     <div>
                         <motion.h1 variants={fadeUp} className="text-4xl/tight md:text-6xl/tight font-semibold tracking-tight">
                             Salut, je m'appelle Lou-Ann Barry - Game Producer
                         </motion.h1>
-                        <motion.p variants={fadeUp} className="mt-4 text-lg text-zinc-300">
-                            J'ai 20 ans et je suis actuellement en 3ᵉ année à l'ICAN Lyon où j'étudie le Game Design avec une spécialité en Tech Art. En tant que futur producer, cette formation m'a permis de travailler sur de nombreux projets en équipe, d'organiser les pipelines de production et d'acquérir de l'expérience concernant le rôle de Producer.<br />
 
+                        <motion.p variants={fadeUp} className="mt-4 text-lg text-[#C3D0F6]">
+                            J'ai 20 ans et je suis actuellement en 3ᵉ année à l'ICAN Lyon où j'étudie le Game Design avec une spécialité en Tech Art. En tant que futur producer, cette formation m'a permis de travailler sur de nombreux projets en équipe, d'organiser les pipelines de production et d'acquérir de l'expérience concernant le rôle de Producer.<br />
                             Parmi les compétences que je possède figurent, entre autres, la gestion de projet avec les méthodes Agile et Kanban, ainsi que l'utilisation d'outils tels que Notion, JIRA, Figma, et bien plus encore. Pour plus d'informations concernant mon ensemble de compétences, assurez-vous de consulter la section « Compétences » en bas de la page.
                         </motion.p>
+
                         <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-3">
-                            <a href="#projects" className="inline-flex items-center gap-2 rounded-xl bg-white text-zinc-900 px-4 py-2 font-medium hover:bg-zinc-200 transition">
+                            <a href="#projects" className="inline-flex items-center gap-2 rounded-xl bg-white text-[#0D1F3E] px-4 py-2 font-medium hover:bg-[#EDF0FC] transition">
                                 Voir mes projets <ArrowRight className="h-4 w-4" />
                             </a>
-                            <a href={`mailto:${LINKS.email}`} className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 hover:bg-white/10 transition">
+
+                            <a href={`mailto:${LINKS.email}`} className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition">
                                 <Mail className="h-4 w-4" /> Me contacter
                             </a>
                         </motion.div>
-                        <motion.div variants={fadeUp} className="mt-6 flex items-center gap-4 text-zinc-400">
-                            <a href={LINKS.github} className="hover:text-white transition" aria-label="GitHub"><Github className="h-5 w-5" /></a>
-                            <a href={LINKS.linkedin} className="hover:text-white transition" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
+
+                        <motion.div variants={fadeUp} className="mt-6 flex items-center gap-4 text-[#8BA8EE]">
+                            <a href={LINKS.github} className="hover:text-[#EDF0FC] transition" aria-label="GitHub"><Github className="h-5 w-5" /></a>
+                            <a href={LINKS.linkedin} className="hover:text-[#EDF0FC] transition" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
                         </motion.div>
                     </div>
+
                     <motion.div variants={fadeUp} className="flex justify-center md:justify-end">
                         <Image
                             src="/moi.png"
@@ -138,25 +143,40 @@ function Projects() {
         <section id="projects" className="mx-auto max-w-6xl px-4 py-24">
             <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }}>
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Projets sélectionnés</h2>
-                <p className="mt-2 text-zinc-400">Une sélection courte et impactante. Chaque carte mène vers une page ou un PDF détaillé.</p>
+                <p className="mt-2 text-[#8BA8EE]">Une sélection courte et impactante. Chaque carte mène vers une page ou un PDF détaillé.</p>
             </motion.div>
+
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {PROJECTS.map((p, i) => (
-                    <motion.a key={i} variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }}
-                        href={p.link} className="group block rounded-3xl border border-white/10 bg-zinc-900/60 p-5 hover:bg-zinc-900 transition shadow-xl">
-                        <div className="aspect-[16/10] overflow-hidden rounded-2xl bg-zinc-800 grid place-items-center">
-                            <span className="text-zinc-500">Visuel / cover</span>
+                    <motion.a
+                        key={i}
+                        variants={fadeUp}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        href={p.link}
+                        className="group block rounded-3xl border border-[#C3D0F6]/15 bg-[#1F3E71]/35 p-5 hover:bg-[#1F3E71]/45 transition shadow-xl"
+                    >
+                        <div className="aspect-[16/10] overflow-hidden rounded-2xl bg-[#1F3E71]/45 grid place-items-center border border-[#C3D0F6]/10">
+                            <span className="text-[#8BA8EE]">Visuel / cover</span>
                         </div>
+
                         <div className="mt-4 flex items-start justify-between gap-4">
                             <div>
-                                <h3 className="text-lg font-semibold group-hover:underline underline-offset-4 decoration-zinc-500/50">{p.title}</h3>
-                                <p className="mt-1 text-sm text-zinc-400">{p.role}</p>
+                                <h3 className="text-lg font-semibold group-hover:underline underline-offset-4 decoration-[#8BA8EE]/40">{p.title}</h3>
+                                <p className="mt-1 text-sm text-[#C3D0F6]">{p.role}</p>
                             </div>
-                            <ExternalLink className="h-5 w-5 text-zinc-500 group-hover:text-zinc-300" />
+                            <ExternalLink className="h-5 w-5 text-[#8BA8EE] group-hover:text-[#EDF0FC]" />
                         </div>
-                        <p className="mt-3 text-sm text-zinc-300">{p.summary}</p>
+
+                        <p className="mt-3 text-sm text-[#C3D0F6]">{p.summary}</p>
+
                         <div className="mt-4 flex flex-wrap gap-2">
-                            {p.tags.map((t, idx) => (<span key={idx} className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-zinc-300">{t}</span>))}
+                            {p.tags.map((t, idx) => (
+                                <span key={idx} className="rounded-full border border-[#C3D0F6]/15 bg-[#0D1F3E]/30 px-2.5 py-1 text-xs text-[#EDF0FC]">
+                                    {t}
+                                </span>
+                            ))}
                         </div>
                     </motion.a>
                 ))}
@@ -170,17 +190,19 @@ function About() {
         <section id="about" className="mx-auto max-w-6xl px-4 py-24">
             <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }} className="grid gap-10 md:grid-cols-3">
                 <div className="md:col-span-1">
-                    <div className="aspect-square w-full overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-tr from-indigo-500/20 to-fuchsia-500/20 grid place-items-center">
+                    <div className="aspect-square w-full overflow-hidden rounded-3xl border border-[#C3D0F6]/15 bg-gradient-to-tr from-[#4782E4]/20 to-[#8BA8EE]/15 grid place-items-center">
                         <div className="h-24 w-24 rounded-full bg-white/10" />
                     </div>
                 </div>
+
                 <div className="md:col-span-2">
                     <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">À propos</h2>
-                    <p className="mt-4 text-zinc-300 leading-relaxed">
-                        Producer orienté delivery, j&apos;aime aligner vision, scope et ressources pour sortir des projets concrets. Mon approche: diagnostics rapides,plans d&apos; action simples
-                        , rituels efficaces, communication claire. Curieux, calme sous pression, très process mais pragmatique.
+                    <p className="mt-4 text-[#C3D0F6] leading-relaxed">
+                        Producer orienté delivery, j&apos;aime aligner vision, scope et ressources pour sortir des projets concrets. Mon approche: diagnostics rapides,plans d&apos; action simples,
+                        rituels efficaces, communication claire. Curieux, calme sous pression, très process mais pragmatique.
                     </p>
-                    <ul className="mt-6 grid gap-2 text-zinc-300">
+
+                    <ul className="mt-6 grid gap-2 text-[#C3D0F6]">
                         <li>• Outils: JIRA, Confluence, Notion, Slack</li>
                         <li>• Méthodes: Scrum, Kanban, roadmapping, risk mgmt</li>
                         <li>• Soft skills: facilitation, feedback, conflict mgmt</li>
@@ -197,16 +219,27 @@ function Experience() {
             <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }}>
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Expérience</h2>
             </motion.div>
+
             <div className="mt-8 grid gap-6">
                 {EXPERIENCE.map((e, i) => (
-                    <motion.div key={i} variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }} className="rounded-3xl border border-white/10 bg-zinc-900/60 p-6">
+                    <motion.div
+                        key={i}
+                        variants={fadeUp}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        className="rounded-3xl border border-[#C3D0F6]/15 bg-[#1F3E71]/35 p-6"
+                    >
                         <div className="flex flex-wrap items-baseline justify-between gap-3">
                             <div>
-                                <h3 className="text-lg font-semibold">{e.title} · <span className="text-zinc-300 font-normal">{e.place}</span></h3>
+                                <h3 className="text-lg font-semibold">
+                                    {e.title} · <span className="text-[#C3D0F6] font-normal">{e.place}</span>
+                                </h3>
                             </div>
-                            <div className="text-sm text-zinc-400">{e.period}</div>
+                            <div className="text-sm text-[#8BA8EE]">{e.period}</div>
                         </div>
-                        <ul className="mt-3 grid gap-1.5 text-zinc-300 text-sm list-disc pl-5">
+
+                        <ul className="mt-3 grid gap-1.5 text-[#C3D0F6] text-sm list-disc pl-5">
                             {e.items.map((it, idx) => (<li key={idx}>{it}</li>))}
                         </ul>
                     </motion.div>
@@ -219,15 +252,16 @@ function Experience() {
 function Contact() {
     return (
         <section id="contact" className="mx-auto max-w-6xl px-4 py-24">
-            <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }} className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900/60 to-zinc-900/20 p-10">
+            <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }} className="rounded-3xl border border-[#C3D0F6]/15 bg-gradient-to-br from-[#1F3E71]/35 to-[#0D1F3E]/20 p-10">
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Discutons ⚡️</h2>
-                <p className="mt-2 text-zinc-300">Un projet, une opportunité, des questions ? Écrivez-moi.</p>
+                <p className="mt-2 text-[#C3D0F6]">Un projet, une opportunité, des questions ? Écrivez-moi.</p>
+
                 <div className="mt-6 flex flex-wrap items-center gap-3">
-                    <a href={`mailto:${LINKS.email}`} className="inline-flex items-center gap-2 rounded-xl bg-white text-zinc-900 px-4 py-2 font-medium hover:bg-zinc-200 transition">
+                    <a href={`mailto:${LINKS.email}`} className="inline-flex items-center gap-2 rounded-xl bg-white text-[#0D1F3E] px-4 py-2 font-medium hover:bg-[#EDF0FC] transition">
                         <Mail className="h-4 w-4" /> {LINKS.email}
                     </a>
-                    <a href={LINKS.linkedin} className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 hover:bg-white/10 transition"><Linkedin className="h-4 w-4" /> LinkedIn</a>
-                    <a href={LINKS.github} className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 hover:bg-white/10 transition"><Github className="h-4 w-4" /> GitHub</a>
+                    <a href={LINKS.linkedin} className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition"><Linkedin className="h-4 w-4" /> LinkedIn</a>
+                    <a href={LINKS.github} className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition"><Github className="h-4 w-4" /> GitHub</a>
                 </div>
             </motion.div>
         </section>
@@ -236,8 +270,8 @@ function Contact() {
 
 function Footer() {
     return (
-        <footer className="border-t border-white/5">
-            <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-zinc-400">
+        <footer className="border-t border-[#C3D0F6]/10">
+            <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-[#8BA8EE]">
                 © {new Date().getFullYear()} Lou-Ann Barry. Tous droits réservés.
             </div>
         </footer>
