@@ -35,7 +35,7 @@ const EXPERIENCE = [
 ];
 
 const LINKS = {
-    resumeUrl: "/CV_Lou-Ann_Barry.pdf",
+    resumeUrl: "/CV.pdf",
     email: "you@example.com",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/in/",
