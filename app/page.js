@@ -36,7 +36,7 @@ const EXPERIENCE = [
 
 const LINKS = {
     resumeUrl: "/CV.pdf",
-    email: "you@example.com",
+    email: "louann.barry05@gmail.com",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/in/",
 };
@@ -238,7 +238,7 @@ function Footer() {
     return (
         <footer className="border-t border-white/5">
             <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-zinc-400">
-                © {new Date().getFullYear()} Votre Nom. Tous droits réservés.
+                © {new Date().getFullYear()} Lou-Ann Barry. Tous droits réservés.
             </div>
         </footer>
     );
