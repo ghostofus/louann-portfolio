@@ -35,7 +35,7 @@ const EXPERIENCE = [
 ];
 
 const LINKS = {
-    resumeUrl: "#",
+    resumeUrl: "/CV_Lou-Ann_Barry.pdf",
     email: "you@example.com",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/in/",
@@ -69,13 +69,17 @@ function Header() {
         <div className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-zinc-950/60 border-b border-white/5">
             <div className="mx-auto max-w-6xl px-4">
                 <div className="flex items-center justify-between py-4">
-                    <a href="#home" className="font-semibold tracking-tight text-zinc-100">Votre Nom</a>
+                    <a href="#home" className="font-semibold tracking-tight text-zinc-100">Lou-Ann Barry</a>
                     <nav className="hidden md:flex items-center gap-6 text-zinc-300">
                         <a href="#projects" className="hover:text-white transition">Projets</a>
                         <a href="#about" className="hover:text-white transition">À propos</a>
                         <a href="#experience" className="hover:text-white transition">Expérience</a>
                         <a href="#contact" className="hover:text-white transition">Contact</a>
-                        <a href={LINKS.resumeUrl} className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition">
+                        <a
+                            href={LINKS.resumeUrl}
+                            download
+                            className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition"
+                        >
                             <Download className="h-4 w-4" /> CV
                         </a>
                     </nav>
