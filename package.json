@@ -1,5 +1,5 @@
 {
-  "name": "louann-portfolio",
+  "name": "mon-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "framer-motion": "^12.23.19",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "15.5.4",
     "tailwindcss": "^4"
   }
 }
