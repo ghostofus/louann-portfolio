@@ -161,6 +161,7 @@ function Projects() {
                         <Image
                             src={p.src}
                             width="auto"
+                            height="auto"
                         />
                         </div>
 
