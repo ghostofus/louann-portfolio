@@ -8,9 +8,9 @@ import { ArrowRight, Mail, Github, Linkedin, ExternalLink, Download } from "luci
 
 // ——— Données (à personnaliser) ———
 const PROJECTS = [
-    { title: "IRA - 2025/2026 10 mois", role: "Chef de projet", summary: "Souls like narratif 3D réaliste - Unreal Engine 5", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#about", src: "/ira.png" },
-    { title: "Gecko Pulco - 2025 4 mois ", role: "Chef de projet", summary: "Plateformer 3D cartoon - Unity 6", tags: ["Scrum", "Stakeholders", "KPIs"], link: "#about", src: "/gecko.jpg"  },
-    { title: "Figure out - 2023/2024", role: "Directrice Artistique", summary: "Click & Point 3D - Unreal", tags: ["Planning", "Delivery", "QA"], link: "#about", src: "/figureout.jpg"  },
+    { title: "IRA" , period: "2025/2026 : 10 mois", role: "Chef de projet", summary: "Souls like narratif 3D réaliste - Unreal Engine 5", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#about", src: "/ira.png" },
+    { title: "Gecko Pulco" , period: "2025 : 4 mois ", role: "Chef de projet", summary: "Plateformer 3D cartoon - Unity 6", tags: ["Scrum", "Stakeholders", "KPIs"], link: "#about", src: "/gecko.jpg"  },
+    { title: "Figure out" , period: "2023/2024", role: "Directrice Artistique", summary: "Click & Point 3D - Unreal", tags: ["Planning", "Delivery", "QA"], link: "#about", src: "/figureout.jpg"  },
 ];
 
 const EXPERIENCE = [
@@ -143,7 +143,7 @@ function Projects() {
         <section id="projects" className="mx-auto max-w-6xl px-4 py-24">
             <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }}>
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Projets</h2>
-                <p className="mt-2 text-[#8BA8EE]">Cette séléction présente mes projets personnels et d'études ; réalisés tout au long de l'année</p>
+                <p className="mt-2 text-[#8BA8EE]">Cette séléction présente mes projets personnels et d'études , réalisés tout au long de l'année</p>
             </motion.div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -160,7 +160,7 @@ function Projects() {
                         <div className="aspect-[16/10] overflow-hidden rounded-2xl bg-[#1F3E71]/45 grid place-items-center border border-[#C3D0F6]/10 object-center">
                         <Image
                             src={p.src}
-                          
+                        
                             
                         />
                         </div>
@@ -168,6 +168,7 @@ function Projects() {
                         <div className="mt-4 flex items-start justify-between gap-4">
                             <div>
                                 <h3 className="text-lg font-semibold group-hover:underline underline-offset-4 decoration-[#8BA8EE]/40">{p.title}</h3>
+                                <div className="text-sm text-[#8BA8EE]">{p.period}</div>
                                 <p className="mt-1 text-sm text-[#C3D0F6]">{p.role}</p>
                             </div>
                             <ExternalLink className="h-5 w-5 text-[#8BA8EE] group-hover:text-[#EDF0FC]" />
@@ -257,7 +258,7 @@ function Contact() {
     return (
         <section id="contact" className="mx-auto max-w-6xl px-4 py-24">
             <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }} className="rounded-3xl border border-[#C3D0F6]/15 bg-gradient-to-br from-[#1F3E71]/35 to-[#0D1F3E]/20 p-10">
-                <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Discutons ⚡️</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Discutons !</h2>
                 <p className="mt-2 text-[#C3D0F6]">Un projet, une opportunité, des questions ? Écrivez-moi.</p>
 
                 <div className="mt-6 flex flex-wrap items-center gap-3">
