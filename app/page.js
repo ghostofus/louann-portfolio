@@ -158,7 +158,9 @@ function Projects() {
                         className="group block rounded-3xl border border-[#C3D0F6]/15 bg-[#1F3E71]/35 p-5 hover:bg-[#1F3E71]/45 transition shadow-xl"
                     >
                         <div className="aspect-[16/10] overflow-hidden rounded-2xl bg-[#1F3E71]/45 grid place-items-center border border-[#C3D0F6]/10">
-                            <span className="text-[#8BA8EE]"> / cover</span>
+                        <Image
+                            src={i.src}
+                        />
                         </div>
 
                         <div className="mt-4 flex items-start justify-between gap-4">
