@@ -15,21 +15,21 @@ const PROJECTS = [
 
 const EXPERIENCE = [
     {
-        period: "2024 — Présent", title: "Project Manager", place: "Votre Entreprise", items: [
-            "Pilotage de l'exécution et synchronisation inter-équipes",
-            "Montée en cadence, rituels agiles et reporting",
+        period: "2026 - 90 jours ", title: "Stage - Gestion de projets Data", place: "Orange", items: [
+            "blabla",
+            "blabla",
         ]
     },
     {
-        period: "2022 — 2024", title: "Associate Producer", place: "Studio X", items: [
-            "Gestion du backlog, priorisation, suivi des risques",
-            "Coordination multi-discipline (design, art, tech)",
+        period: "2025 - 44 jours ", title: "Stage - Game / Narrative Designer ", place: "StellarPunk", items: [
+            "blabla",
+            "blabla",
         ]
     },
     {
-        period: "2020 — 2022", title: "Junior Producer", place: "Projet/École", items: [
-            "Livraison de vertical slice, playtests et QA",
-            "Mise en place d'outils (JIRA/Confluence) et process",
+        period: "2023 — 2025", title: "Job étudiant - Assistante Administrative", place: "Fradin & Associés : Huissiers de Justice ", items: [
+            "blabla",
+            "blabla",
         ]
     },
 ];
