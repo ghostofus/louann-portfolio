@@ -160,7 +160,7 @@ function Projects() {
                         <div className="aspect-[16/10] overflow-hidden rounded-2xl bg-[#1F3E71]/45 grid place-items-center border border-[#C3D0F6]/10">
                         <Image
                             src={p.src}
-                            fill="true"
+                            width="auto"
                         />
                         </div>
 
