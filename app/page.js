@@ -22,14 +22,17 @@ const EXPERIENCE = [
     },
     {
         period: "2025 - 44 jours ", title: "Stage - Game / Narrative Designer ", place: "StellarPunk", items: [
-            "blabla",
-            "blabla",
+            "Développement de jeu de société",
+            "Animation de sessions de jeu",
+            "Game design & Ecriture narrative",
         ]
     },
     {
         period: "2023 — 2025", title: "Job étudiant - Assistante Administrative", place: "Fradin & Associés : Huissiers de Justice ", items: [
-            "blabla",
-            "blabla",
+            "Gestion du courrier entrant et sortant (tri, scan, enregistrement)",
+            "Classement et archivage de documents administratifs",
+            "Soutien à l’équipe pour diverses tâches de bureau",
+
         ]
     },
 ];
