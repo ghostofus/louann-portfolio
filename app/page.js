@@ -8,9 +8,9 @@ import { ArrowRight, Mail, Github, Linkedin, ExternalLink, Download } from "luci
 
 // ——— Données (à personnaliser) ———
 const PROJECTS = [
-    { title: "IRA - 2025/2026 10 mois", role: "Chef de projet", summary: "Souls like narratif 3D réaliste - Unreal Engine 5", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#", src: "/ira.png" },
-    { title: "Gecko Pulco - 2025 4 mois ", role: "Chef de projet", summary: "Plateformer 3D cartoon - Unity 6", tags: ["Scrum", "Stakeholders", "KPIs"], link: "#", src: "/gecko.jpg"  },
-    { title: "Figure out - 2023/2024", role: "Directrice Artistique", summary: "Click & Point 3D - Unreal", tags: ["Planning", "Delivery", "QA"], link: "#", src: "/figureout.jpg"  },
+    { title: "IRA - 2025/2026 10 mois", role: "Chef de projet", summary: "Souls like narratif 3D réaliste - Unreal Engine 5", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#about", src: "/ira.png" },
+    { title: "Gecko Pulco - 2025 4 mois ", role: "Chef de projet", summary: "Plateformer 3D cartoon - Unity 6", tags: ["Scrum", "Stakeholders", "KPIs"], link: "#about", src: "/gecko.jpg"  },
+    { title: "Figure out - 2023/2024", role: "Directrice Artistique", summary: "Click & Point 3D - Unreal", tags: ["Planning", "Delivery", "QA"], link: "#about", src: "/figureout.jpg"  },
 ];
 
 const EXPERIENCE = [
