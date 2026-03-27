@@ -150,7 +150,29 @@ function Projects() {
                 <p className="mt-2 text-[#8BA8EE]">Cette séléction présente mes projets personnels et d'études , réalisés tout au long de l'année</p>
             </motion.div>
 
-            <div className="mt-10 flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+            <div
+            className="mt-10 flex gap-6 overflow-x-auto pb-4 scrollbar-hide cursor-grab active:cursor-grabbing"
+            onMouseDown={(e) => {
+                const slider = e.currentTarget;
+                slider.isDown = true;
+                slider.startX = e.pageX - slider.offsetLeft;
+                slider.scrollLeftStart = slider.scrollLeft;
+            }}
+            onMouseLeave={(e) => {
+                e.currentTarget.isDown = false;
+            }}
+            onMouseUp={(e) => {
+                e.currentTarget.isDown = false;
+            }}
+            onMouseMove={(e) => {
+                const slider = e.currentTarget;
+                if (!slider.isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - slider.startX) * 1.5; // vitesse
+                slider.scrollLeft = slider.scrollLeftStart - walk;
+            }}
+            >
                 {PROJECTS.map((p, i) => (
                     <motion.a
                         key={i}
