@@ -8,9 +8,9 @@ import { ArrowRight, Mail, Github, Linkedin, ExternalLink, Download } from "luci
 
 // ——— Données (à personnaliser) ———
 const PROJECTS = [
-    { title: "IRA - 2025/2026 10 mois", role: "Chef de projet", summary: "Souls like narratif 3D réaliste - Unreal Engine 5", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#" },
-    { title: "Gecko Pulco - 2025 4 mois ", role: "Chef de projet", summary: "Plateformer 3D cartoon - Unity 6", tags: ["Scrum", "Stakeholders", "KPIs"], link: "#" },
-    { title: "Figure out - 2023/2024", role: "Directrice Artistique", summary: "Click & Point 3D - Unreal", tags: ["Planning", "Delivery", "QA"], link: "#" },
+    { title: "IRA - 2025/2026 10 mois", role: "Chef de projet", summary: "Souls like narratif 3D réaliste - Unreal Engine 5", tags: ["Agile", "JIRA", "Roadmapping", "Risk mgmt"], link: "#", image: "/ira.png" },
+    { title: "Gecko Pulco - 2025 4 mois ", role: "Chef de projet", summary: "Plateformer 3D cartoon - Unity 6", tags: ["Scrum", "Stakeholders", "KPIs"], link: "#", image: "/gecko.jpg"  },
+    { title: "Figure out - 2023/2024", role: "Directrice Artistique", summary: "Click & Point 3D - Unreal", tags: ["Planning", "Delivery", "QA"], link: "#", image: "/figureout.jpg"  },
 ];
 
 const EXPERIENCE = [
@@ -142,8 +142,8 @@ function Projects() {
     return (
         <section id="projects" className="mx-auto max-w-6xl px-4 py-24">
             <motion.div variants={fadeUp} initial="initial" whileInView="animate" viewport={{ once: true }}>
-                <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Projets sélectionnés</h2>
-                <p className="mt-2 text-[#8BA8EE]">Une sélection courte et impactante. Chaque carte mène vers une page ou un PDF détaillé.</p>
+                <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Projets</h2>
+                <p className="mt-2 text-[#8BA8EE]">Cette séléction présente mes projets personnels et d'études ; réalisés tout au long de l'année</p>
             </motion.div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
