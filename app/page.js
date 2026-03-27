@@ -102,7 +102,7 @@ function Hero() {
                 <motion.div variants={stagger} initial="initial" whileInView="animate" viewport={{ once: true, amount: 0.5 }} className="grid gap-10 md:grid-cols-2 md:items-center">
                     <div>
                         <motion.h1 variants={fadeUp} className="text-4xl/tight md:text-6xl/tight font-semibold tracking-tight">
-                            Salut, je m'appelle Lou-Ann Barry - Game Producer
+                            Salut, je m'appelle Lou-Ann Barry !
                         </motion.h1>
 
                         <motion.p variants={fadeUp} className="mt-4 text-lg text-[#C3D0F6]">
