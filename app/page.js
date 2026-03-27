@@ -150,7 +150,7 @@ function Projects() {
                 <p className="mt-2 text-[#8BA8EE]">Cette séléction présente mes projets personnels et d'études , réalisés tout au long de l'année</p>
             </motion.div>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
                 {PROJECTS.map((p, i) => (
                     <motion.a
                         key={i}
@@ -159,7 +159,7 @@ function Projects() {
                         whileInView="animate"
                         viewport={{ once: true }}
                         href={p.link}
-                        className="group block rounded-3xl border border-[#C3D0F6]/15 bg-[#1F3E71]/35 p-5 hover:bg-[#1F3E71]/45 transition shadow-xl"
+                        className="group min-w-[300px] max-w-[300px] flex-shrink-0 rounded-3xl border border-white/10 bg-zinc-900/60 p-5 hover:bg-zinc-900 transition shadow-xl"
                     >
                         <div className="overflow-hidden rounded-2xl bg-[#1F3E71]/45 grid place-items-center border border-[#C3D0F6]/10 object-center">
                         <Image
