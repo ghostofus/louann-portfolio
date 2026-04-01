@@ -114,10 +114,6 @@ function Hero() {
                             <a href="#projects" className="inline-flex items-center gap-2 rounded-xl bg-white text-[#0D1F3E] px-4 py-2 font-medium hover:bg-[#EDF0FC] transition">
                                 Voir mes projets <ArrowRight className="h-4 w-4" />
                             </a>
-
-                            <a href="#skills"className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition">
-                                <Mail className="h-4 w-4" /> Compétences
-                            </a>
                         </motion.div>
 
                         <motion.div variants={fadeUp} className="mt-6 flex items-center gap-4 text-[#8BA8EE]">
