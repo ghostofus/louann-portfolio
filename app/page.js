@@ -101,9 +101,9 @@ function Hero() {
             <div className="mx-auto max-w-6xl px-4 py-24 md:py-32">
                 <motion.div variants={stagger} initial="initial" whileInView="animate" viewport={{ once: true, amount: 0.5 }} className="grid gap-10 md:grid-cols-2 md:items-center">
                     <div>
-                        <motion.h1 variants={fadeUp} className="text-4xl/tight md:text-6xl/tight font-semibold tracking-tight">
+                        <motion.h2 variants={fadeUp} className="text-4xl/tight md:text-6xl/tight font-semibold tracking-tight">
                             Bonjour, je m’appelle BARRY Lou-Ann
-                        </motion.h1>
+                        </motion.h2>
 
                         <motion.p variants={fadeUp} className="mt-4 text-lg text-[#C3D0F6]">
                             J’ai 20 ans et je suis actuellement étudiante en troisième année à l'ICAN a Lyon, où je suis une formation en Game Design, avec une spécialisation en TechArt. <b>Dans l'optique de devenir productrice ,</b> cette formation m’a permis de mener à bien des projets au sein d’équipes importantes et plus réduite, et d’acquérir de l’expérience dans le rôle de productrice de jeux vidéo.<br />
