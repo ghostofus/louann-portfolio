@@ -102,12 +102,12 @@ function Hero() {
                 <motion.div variants={stagger} initial="initial" whileInView="animate" viewport={{ once: true, amount: 0.5 }} className="grid gap-10 md:grid-cols-2 md:items-center">
                     <div>
                         <motion.h1 variants={fadeUp} className="text-4xl/tight md:text-6xl/tight font-semibold tracking-tight">
-                            Salut, je m'appelle Lou-Ann Barry !
+                            Bonjour, je m’appelle BARRY Lou-Ann
                         </motion.h1>
 
                         <motion.p variants={fadeUp} className="mt-4 text-lg text-[#C3D0F6]">
-                            J'ai 20 ans et je suis actuellement en 3ᵉ année à l'ICAN Lyon où j'étudie le Game Design avec une spécialité en Tech Art. En tant que futur producer, cette formation m'a permis de travailler sur de nombreux projets en équipe, d'organiser les pipelines de production et d'acquérir de l'expérience concernant le rôle de Producer.<br />
-                            Parmi les compétences que je possède figurent, entre autres, la gestion de projet avec les méthodes Agile et Kanban, ainsi que l'utilisation d'outils tels que Notion, JIRA, Figma, et bien plus encore. Pour plus d'informations concernant mon ensemble de compétences, assurez-vous de consulter la section « Compétences » en bas de la page.
+                            J’ai 20 ans et je suis actuellement étudiante en troisième année à l'ICAN a Lyon, où je suis une formation en Game Design, avec une spécialisation en TechArt. <b>Dans l'optique de devenir productrice ,</b> cette formation m’a permis de mener à bien des projets au sein d’équipes importantes et plus réduite, et d’acquérir de l’expérience dans le rôle de productrice de jeux vidéo.<br />
+                            Parmi les compétences que je possède, on peut citer, entre autres, la gestion de projet à l'aide des méthodes Agile, Waterfall et Kanban, Scrum, JIRA, et bien plus encore. Pour plus d'informations sur mes compétences, n'hésitez pas à consulter la section « Compétences » au bas de la page.
                         </motion.p>
 
                         <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-3">
