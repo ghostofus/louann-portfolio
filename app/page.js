@@ -76,7 +76,7 @@ function Header() {
                     <a href="#home" className="font-semibold tracking-tight text-[#EDF0FC]">Lou-Ann Barry</a>
                     <nav className="hidden md:flex items-center gap-6 text-[#C3D0F6]">
                         <a href="#projects" className="hover:text-[#EDF0FC] transition">Projets</a>
-                        <a href="#about" className="hover:text-[#EDF0FC] transition">À propos</a>
+                        <a href="#about" className="hover:text-[#EDF0FC] transition">Compétences</a>
                         <a href="#experience" className="hover:text-[#EDF0FC] transition">Expérience</a>
                         <a href="#contact" className="hover:text-[#EDF0FC] transition">Contact</a>
 
@@ -115,8 +115,8 @@ function Hero() {
                                 Voir mes projets <ArrowRight className="h-4 w-4" />
                             </a>
 
-                            <a href="#about"className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition">
-                                <Mail className="h-4 w-4" /> A propos
+                            <a href="#skills"className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition">
+                                <Mail className="h-4 w-4" /> Compétences
                             </a>
                         </motion.div>
 
