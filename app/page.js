@@ -115,8 +115,8 @@ function Hero() {
                                 Voir mes projets <ArrowRight className="h-4 w-4" />
                             </a>
 
-                            <a href={`mailto:${LINKS.email}`} className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition">
-                                <Mail className="h-4 w-4" /> Me contacter
+                            <a href="#about"className="inline-flex items-center gap-2 rounded-xl border border-[#C3D0F6]/20 px-4 py-2 hover:bg-[#1F3E71]/35 transition">
+                                <Mail className="h-4 w-4" /> A propos
                             </a>
                         </motion.div>
 
