@@ -227,7 +227,7 @@ function About() {
                 </div>
 
                 <div className="md:col-span-2">
-                    <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">À propos</h2>
+                    <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Compétences</h2>
                     <p className="mt-4 text-[#C3D0F6] leading-relaxed">
                         Producer orienté delivery, j&apos;aime aligner vision, scope et ressources pour sortir des projets concrets. Mon approche: diagnostics rapides,plans d&apos; action simples,
                         rituels efficaces, communication claire. Curieux, calme sous pression, très process mais pragmatique.
