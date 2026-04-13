@@ -52,9 +52,63 @@ const fadeUp = {
 };
 const stagger = { animate: { transition: { staggerChildren: 0.12 } } };
 
+function StarField() {
+    const canvasRef = React.useRef(null);
+
+    React.useEffect(() => {
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext("2d");
+        let animationId;
+
+        const resize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = document.documentElement.scrollHeight;
+        };
+        resize();
+
+        const stars = Array.from({ length: 180 }, () => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            r: Math.random() * 1.4 + 0.2,
+            alpha: Math.random() * 0.6 + 0.2,
+            speed: Math.random() * 0.003 + 0.001,
+            offset: Math.random() * Math.PI * 2,
+        }));
+
+        let t = 0;
+        const draw = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            t += 0.012;
+            stars.forEach((s) => {
+                const pulse = s.alpha + Math.sin(t * s.speed * 60 + s.offset) * 0.15;
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(195, 215, 255, ${Math.max(0.05, pulse)})`;
+                ctx.fill();
+            });
+            animationId = requestAnimationFrame(draw);
+        };
+        draw();
+
+        window.addEventListener("resize", resize);
+        return () => {
+            cancelAnimationFrame(animationId);
+            window.removeEventListener("resize", resize);
+        };
+    }, []);
+
+    return (
+        <canvas
+            ref={canvasRef}
+            style={{ position: "fixed", inset: 0, zIndex: 0, pointerEvents: "none" }}
+        />
+    );
+}
 export default function Page() {
     return (
-        <div className="min-h-screen bg-[#0D1F3E] text-[#EDF0FC] selection:bg-[#4782E4]/30">
+        <div className="min-h-screen bg-[#080f1e] text-[#EDF0FC] selection:bg-[#4782E4]/30" style={{ position: "relative" }}>
+    <StarField />
+    <div style={{ position: "relative", zIndex: 1 }}>
             <Header />
             <main>
                 <Hero />
@@ -63,7 +117,7 @@ export default function Page() {
                 <Experience />
                 <Contact />
             </main>
-            <Footer />
+            <Footer /> </div>
         </div>
     );
 }
