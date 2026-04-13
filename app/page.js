@@ -60,27 +60,23 @@ function StarField() {
         const ctx = canvas.getContext("2d");
         let animationId;
 
-        const resize = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = document.documentElement.scrollHeight;
-        };
-        resize();
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
 
         const stars = Array.from({ length: 180 }, () => ({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
             r: Math.random() * 1.4 + 0.2,
             alpha: Math.random() * 0.6 + 0.2,
-            speed: Math.random() * 0.003 + 0.001,
             offset: Math.random() * Math.PI * 2,
         }));
 
         let t = 0;
         const draw = () => {
+            t += 0.02;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            t += 0.012;
             stars.forEach((s) => {
-                const pulse = s.alpha + Math.sin(t * s.speed * 60 + s.offset) * 0.15;
+                const pulse = s.alpha + Math.sin(t + s.offset) * 0.3;
                 ctx.beginPath();
                 ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
                 ctx.fillStyle = `rgba(195, 215, 255, ${Math.max(0.05, pulse)})`;
@@ -90,11 +86,7 @@ function StarField() {
         };
         draw();
 
-        window.addEventListener("resize", resize);
-        return () => {
-            cancelAnimationFrame(animationId);
-            window.removeEventListener("resize", resize);
-        };
+        return () => cancelAnimationFrame(animationId);
     }, []);
 
     return (
