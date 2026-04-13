@@ -73,7 +73,7 @@ function StarField() {
 
         let t = 0;
         const draw = () => {
-            t += 0.02;
+            t += 0.2;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             stars.forEach((s) => {
                 const pulse = s.alpha + Math.sin(t + s.offset) * 0.3;
